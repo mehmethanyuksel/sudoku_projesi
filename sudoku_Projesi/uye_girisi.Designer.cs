@@ -138,7 +138,7 @@
             // 
             // textBox4
             // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBox4.BackColor = System.Drawing.SystemColors.Window;
             this.textBox4.Location = new System.Drawing.Point(83, 13);
             this.textBox4.MaxLength = 30;
             this.textBox4.Name = "textBox4";

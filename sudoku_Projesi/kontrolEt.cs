@@ -6,22 +6,21 @@ using System.Threading.Tasks;
 
 namespace sudoku_Projesi
 {
-    class kontrolEt : Form1
+    class kontrolEt 
     {
         public string text;
         public Boolean kontrol = false;
-        private int tuty = 0, tutd = 0, tut;
-        Form1 fm1;
+        private int tuty = 0, tutd = 0, tut,ybitis=3,ybos=0,dbitis=3,dbos=0;
+        private string strtut, strkont;
         private int[,] matrisim = new int[9, 9];
         public kontrolEt(int[,] matris)
         {
             for (int i = 0; i < 9; i++)
                 for (int j = 0; j < 9; j++)
                     matrisim[i, j] = matris[i, j];
-
-
-            satirsutun();
             dokuzluKontrol();
+            satirsutun();
+            
         }
 
         private void satirsutun()
@@ -54,27 +53,48 @@ namespace sudoku_Projesi
                                     }
                         }
                 }
+            kontrol = false;
         }
 
         private void dokuzluKontrol()
         {
-            if (kontrol == false)
-                for (int i = 0; i < 3; i++)
-                    if (kontrol == false)
-                        for (int j = 0; j < 3; j++)
-                        {
-                            tut = matris[i, j];
-                            if (kontrol == false)
-                                for (int k = j; k < 3; k++)
-                                    if (kontrol == false)
-                                        for (int l = 0; l < 3; l++)
-                                            if (k != 0 || l != 0)
-                                                if (tut == matris[k, l])
-                                                {
-                                                    kontrol = true;
-                                                    text = "9'lu içerisinde hata tespit edildi";
-                                                }
-                        }
+            for (int m = 1; m <= 9; m++)
+            {
+                if (kontrol == false)
+                    for (int i=ybos; i < ybitis; i++)
+                        if (kontrol == false)
+                            for (int j = dbos; j < dbitis; j++)
+                            {
+                                tut = matrisim[i, j];
+                                strtut = i + "" + j;
+                                if (kontrol == false)
+                                    for (int k = ybos; k < ybitis; k++)
+                                        if (kontrol == false)
+                                            for (int l = dbos; l < dbitis; l++)
+                                            {
+                                                strkont = k + "" + l;
+                                                if (strtut != strkont)
+                                                    if (tut == matrisim[k, l])
+                                                    {
+                                                        kontrol = true;
+                                                        text = m+". 9'lu içerisinde hata tespit edildi";
+                                                        break;
+                                                    }
+                                            }
+                            }
+                tut = 0;
+                ybos += 3;
+                ybitis += 3;
+                if (m%3==0)
+                {
+                    ybos = 0;
+                    ybitis = 3;
+                    dbos += 0;
+                    dbitis += 3;
+                }
+            }
+            kontrol = false;
+            
         }
     }
 }

@@ -49,47 +49,6 @@ namespace sudoku_Projesi
             }
             else
                 kontroleKontrol = false;
-            
-           /* int tut=0,tut2=0,tut3=0;
-            Boolean kontrol = false,kontrol2=false,kontrol3=false;
-            
-                if (kontrol == false)
-                    for (int i = 0; i < 9; i++)
-                    {
-                        if (kontrol == false)
-                            for (int j = 0; j < 9; j++)
-                            {
-                                tut = matris[i, j];
-                                if (kontrol == false) 
-                                    for (int k = j+1; k < 9; k++)
-                                        if (tut == matris[i, k])
-                                        {
-                                            kontrol = true;
-                                            MessageBox.Show((i+1)+". satırda hata var");
-                                            break;
-                                           // frm.Controls["textbox" + i + j].BackColor = System.Drawing.SystemColors.ScrollBar;//textbox renklendirme işlemini hallet
-                                        }
-                                tut2 = matris[j, i];
-                                if (kontrol2 == false)
-                                    for (int k = j + 1; k < 9; k++)
-                                        if (tut == matris[k, i])
-                                        {
-                                            kontrol2 = true;
-                                            MessageBox.Show((i + 1) + ". sütunda hata var");
-                                            break;
-                                        }
-                            }
-                    }
-                
-                
-                            }
-                kontrol = false;
-                kontrol2 = false;
-                kontrol3 = false;
-            */
-          
-            
-            
         }
         private void textBox11_KeyPress(object sender, KeyPressEventArgs e)
         {
