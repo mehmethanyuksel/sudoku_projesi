@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace sudoku_Projesi
 {
-    class textolustur
+    class kontrolEt
     {
     }
 }

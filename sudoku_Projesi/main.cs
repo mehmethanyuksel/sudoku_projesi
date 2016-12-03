@@ -35,7 +35,9 @@ namespace sudoku_Projesi
         private void button2_Click(object sender, EventArgs e)
         {
             Form1 frm1 = new Form1();
+            main mainForm = new main();
             frm1.Show();
+            mainForm.Hide();
         }
 
         private void main_Load(object sender, EventArgs e)

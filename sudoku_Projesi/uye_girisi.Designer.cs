@@ -51,7 +51,7 @@
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Location = new System.Drawing.Point(26, 12);
+            this.groupBox1.Location = new System.Drawing.Point(13, 10);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(276, 91);
             this.groupBox1.TabIndex = 11;
@@ -65,12 +65,14 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(56, 57);
             this.button1.TabIndex = 7;
-            this.button1.Text = "button1";
+            this.button1.Text = "Giriş Yap";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(83, 50);
+            this.textBox2.MaxLength = 30;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(124, 20);
             this.textBox2.TabIndex = 6;
@@ -78,6 +80,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(83, 13);
+            this.textBox1.MaxLength = 30;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(124, 20);
             this.textBox1.TabIndex = 2;
@@ -107,7 +110,7 @@
             this.groupBox2.Controls.Add(this.textBox4);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Location = new System.Drawing.Point(25, 12);
+            this.groupBox2.Location = new System.Drawing.Point(12, 12);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(276, 91);
             this.groupBox2.TabIndex = 12;
@@ -121,19 +124,23 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(56, 57);
             this.button2.TabIndex = 13;
-            this.button2.Text = "button2";
+            this.button2.Text = "Kaydol";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(83, 50);
+            this.textBox3.MaxLength = 30;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(124, 20);
             this.textBox3.TabIndex = 6;
             // 
             // textBox4
             // 
+            this.textBox4.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.textBox4.Location = new System.Drawing.Point(83, 13);
+            this.textBox4.MaxLength = 30;
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(124, 20);
             this.textBox4.TabIndex = 2;
@@ -160,7 +167,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(313, 112);
+            this.ClientSize = new System.Drawing.Size(301, 116);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "uye_girisi";
