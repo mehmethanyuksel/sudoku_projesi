@@ -12,17 +12,22 @@ namespace sudoku_Projesi
 {
     public partial class Form1 : Form
     {
+        
+        //private Timer t = new Timer(); //Timer'ı hallet
         public static Form1 frm;
         public Form1()
         {
+            //t.Start();
             InitializeComponent();
-            frm = this;
+            frm = this; // form 1 in this i bu daha sonra addbox sınıfında ısımıze yarıcak
+            //label1.Text = t.ToString();
         }
         public int[,] matris = new int[9, 9];
         Boolean kontroleKontrol = false;
         private void Form1_Load(object sender, EventArgs e)
         {
            AddBox addtxt = new AddBox();
+           baslangicDegerleri baslangic = new baslangicDegerleri();
         }
         private void matriseAl()
         {
@@ -30,8 +35,7 @@ namespace sudoku_Projesi
             {
                 for (int i = 1; i <= 9; i++)
                     for (int j = 1; j <= 9; j++)
-                        matris[i - 1, j - 1] = int.Parse(((TextBox)this.Controls["textbox" + i + j]).Text); // textboxtaki değerleri matrise atadık
-
+                        matris[i - 1, j - 1] = int.Parse(((TextBox)this.Controls["textbox" + i + j]).Text); 
             }
             catch(Exception ex)
             {
@@ -59,16 +63,10 @@ namespace sudoku_Projesi
             Form2 frm = new Form2();
             frm.Show();
         }
-
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
 
         }
-
-        
-       
-
-        
     }
     
 }

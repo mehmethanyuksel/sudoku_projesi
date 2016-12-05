@@ -9,7 +9,6 @@ namespace sudoku_Projesi
 {
     class AddBox
     {
-        private Random disableFalseRandom = new Random();
         public AddBox()
         {
             int x = 302, y = 30;
@@ -30,16 +29,15 @@ namespace sudoku_Projesi
         }
         public void ekle(int x, int y, int satir, int sutun)
         {
-            TextBox textbox = new TextBox();
-            textbox.Name = "Textbox" + sutun + satir;
-            textbox.Location = new System.Drawing.Point(x, y);
-            textbox.Multiline = true;
-            textbox.Size = new System.Drawing.Size(51, 51);
-            textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            textbox.MaxLength = 1;
-            textbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            Form1.frm.Controls.Add(textbox);
-            textbox.Text = Convert.ToString(disableFalseRandom.Next(1, 9));
+            TextBox textbox = new TextBox();                    //Textbox sınıfından nesne üret
+            textbox.Name = "Textbox" + sutun + satir;           //Textbox'a isim ver, textbox'ın text'i değil ismi
+            textbox.Location = new System.Drawing.Point(x, y);  //Konum
+            textbox.Multiline = true;                           //Çok satırlılık normalde aşşa dogru uzamıyodu bu kodla uzayabılıyo artık 
+            textbox.Size = new System.Drawing.Size(51, 51);     //Boyut
+            textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;//dikeyde satırın ortalanması ıcın cursor ın ortada cıkması ıcın 
+            textbox.MaxLength = 1;                              // max 1 karaktere ızın verır rakam ıcın yaptık yani
+            textbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162))); // font ozeelıklerı
+            Form1.frm.Controls.Add(textbox); // form 1 deki frm.this ile buraya oluşturdugumuz nesneyi 
         }
     }
 }

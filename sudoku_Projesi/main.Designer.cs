@@ -59,7 +59,7 @@
             this.groupBox3.Size = new System.Drawing.Size(200, 100);
             this.groupBox3.TabIndex = 9;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Zorluk Derecesi Seç!";
+            this.groupBox3.Text = "Zorluk Derecesi Seçin!";
             // 
             // radioButton2
             // 

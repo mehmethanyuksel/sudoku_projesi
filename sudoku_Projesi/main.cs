@@ -38,6 +38,7 @@ namespace sudoku_Projesi
             main mainForm = new main();
             frm1.Show();
             mainForm.Hide();
+            
         }
 
         private void main_Load(object sender, EventArgs e)

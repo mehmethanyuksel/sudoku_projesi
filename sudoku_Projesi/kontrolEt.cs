@@ -3,16 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace sudoku_Projesi
 {
-    class kontrolEt 
+    class kontrolEt:AddBox
     {
         public string text;
         public Boolean kontrol = false;
         private int tuty = 0, tutd = 0, tut,ybitis=3,ybos=0,dbitis=3,dbos=0;
+        public int tutk,tuti;
         private string strtut, strkont;
         private int[,] matrisim = new int[9, 9];
+
         public kontrolEt(int[,] matris)
         {
             for (int i = 0; i < 9; i++)
@@ -20,7 +23,6 @@ namespace sudoku_Projesi
                     matrisim[i, j] = matris[i, j];
             dokuzluKontrol();
             satirsutun();
-            
         }
 
         private void satirsutun()
@@ -40,8 +42,10 @@ namespace sudoku_Projesi
                                     {
                                         kontrol = true;
                                         text = (i + 1) + ". Satırda hata tespit edildi";
+                                        tutk = k;
+                                        tuti = i;
                                         break;
-                                        // frm.Controls["textbox" + i + j].BackColor = System.Drawing.SystemColors.ScrollBar;//textbox renklendirme işlemini hallet
+                                        
                                     }
                             if (kontrol == false)
                                 for (int k = j + 1; k < 9; k++)
@@ -49,6 +53,8 @@ namespace sudoku_Projesi
                                     {
                                         kontrol = true;
                                         text = (i + 1) + ". Sütunda hata tespit edildi";
+                                        tutk = k;
+                                        tuti = i;
                                         break;
                                     }
                         }
