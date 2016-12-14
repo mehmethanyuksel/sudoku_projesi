@@ -15,6 +15,7 @@ namespace sudoku_Projesi
         
         //private Timer t = new Timer(); //Timer'ı hallet
         public static Form1 frm;
+        kontrolEt kontroll;
         public Form1()
         {
             //t.Start();
@@ -22,12 +23,13 @@ namespace sudoku_Projesi
             frm = this; // form 1 in this i bu daha sonra addbox sınıfında ısımıze yarıcak
             //label1.Text = t.ToString();
         }
-        public int[,] matris = new int[9, 9];
+        private int[,] matris = new int[9, 9];
         Boolean kontroleKontrol = false;
         private void Form1_Load(object sender, EventArgs e)
         {
-           AddBox addtxt = new AddBox();
+           //AddBox addtxt = new AddBox();
            baslangicDegerleri baslangic = new baslangicDegerleri();
+           
         }
         private void matriseAl()
         {
@@ -48,7 +50,7 @@ namespace sudoku_Projesi
             matriseAl();
             if (kontroleKontrol==false)
             {
-                kontrolEt kontroll = new kontrolEt(matris);
+                kontroll = new kontrolEt(matris);
                 MessageBox.Show(kontroll.text);
             }
             else

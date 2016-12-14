@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace sudoku_Projesi
 {
-    class kontrolEt:AddBox
+    class kontrolEt
     {
         public string text;
         public Boolean kontrol = false;
@@ -15,7 +15,6 @@ namespace sudoku_Projesi
         public int tutk,tuti;
         private string strtut, strkont;
         private int[,] matrisim = new int[9, 9];
-
         public kontrolEt(int[,] matris)
         {
             for (int i = 0; i < 9; i++)
@@ -24,11 +23,10 @@ namespace sudoku_Projesi
             dokuzluKontrol();
             satirsutun();
         }
-
         private void satirsutun()
         {
-
             if (kontrol == false)
+            {
                 for (int i = 0; i < 9; i++)
                 {
                     if (kontrol == false)
@@ -45,7 +43,6 @@ namespace sudoku_Projesi
                                         tutk = k;
                                         tuti = i;
                                         break;
-                                        
                                     }
                             if (kontrol == false)
                                 for (int k = j + 1; k < 9; k++)
@@ -59,48 +56,50 @@ namespace sudoku_Projesi
                                     }
                         }
                 }
-            kontrol = false;
+               
+            }
         }
 
         private void dokuzluKontrol()
         {
-            for (int m = 1; m <= 9; m++)
+            if (kontrol == false)
             {
-                if (kontrol == false)
-                    for (int i=ybos; i < ybitis; i++)
-                        if (kontrol == false)
-                            for (int j = dbos; j < dbitis; j++)
-                            {
-                                tut = matrisim[i, j];
-                                strtut = i + "" + j;
-                                if (kontrol == false)
-                                    for (int k = ybos; k < ybitis; k++)
-                                        if (kontrol == false)
-                                            for (int l = dbos; l < dbitis; l++)
-                                            {
-                                                strkont = k + "" + l;
-                                                if (strtut != strkont)
-                                                    if (tut == matrisim[k, l])
-                                                    {
-                                                        kontrol = true;
-                                                        text = m+". 9'lu içerisinde hata tespit edildi";
-                                                        break;
-                                                    }
-                                            }
-                            }
-                tut = 0;
-                ybos += 3;
-                ybitis += 3;
-                if (m%3==0)
+                for (int m = 1; m <= 9; m++)
                 {
-                    ybos = 0;
-                    ybitis = 3;
-                    dbos += 0;
-                    dbitis += 3;
+                    if (kontrol == false)
+                        for (int i = ybos; i < ybitis; i++)
+                            if (kontrol == false)
+                                for (int j = dbos; j < dbitis; j++)
+                                {
+                                    tut = matrisim[i, j];
+                                    strtut = i + "" + j;
+                                    if (kontrol == false)
+                                        for (int k = ybos; k < ybitis; k++)
+                                            if (kontrol == false)
+                                                for (int l = dbos; l < dbitis; l++)
+                                                {
+                                                    strkont = k + "" + l;
+                                                    if (strtut != strkont)
+                                                        if (tut == matrisim[k, l])
+                                                        {
+                                                            kontrol = true;
+                                                            text = m + ". 9'lu içerisinde hata tespit edildi";
+                                                            break;
+                                                        }
+                                                }
+                                }
+                    tut = 0;
+                    ybos += 3;
+                    ybitis += 3;
+                    if (m % 3 == 0)
+                    {
+                        ybos = 0;
+                        ybitis = 3;
+                        dbos += 0;
+                        dbitis += 3;
+                    }
                 }
             }
-            kontrol = false;
-            
         }
     }
 }
