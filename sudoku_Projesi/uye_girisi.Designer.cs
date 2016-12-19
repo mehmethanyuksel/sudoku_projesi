@@ -130,7 +130,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(83, 50);
+            this.textBox3.Location = new System.Drawing.Point(83, 13);
             this.textBox3.MaxLength = 30;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(124, 20);
@@ -139,7 +139,7 @@
             // textBox4
             // 
             this.textBox4.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox4.Location = new System.Drawing.Point(83, 13);
+            this.textBox4.Location = new System.Drawing.Point(84, 50);
             this.textBox4.MaxLength = 30;
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(124, 20);

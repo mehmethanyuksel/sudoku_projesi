@@ -51,6 +51,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.linkLabel4 = new System.Windows.Forms.LinkLabel();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -273,11 +274,21 @@
             this.label1.TabIndex = 9;
             this.label1.Text = "Süre";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(34, 12);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(93, 13);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Lütfen giriş yapınız";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1030, 531);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.linkLabel4);
             this.Controls.Add(this.groupBox2);
@@ -323,6 +334,7 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.LinkLabel linkLabel4;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
 
 
 

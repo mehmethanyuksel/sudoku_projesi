@@ -105,6 +105,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sqlBaglanti.cs" />
     <Compile Include="uye_girisi.cs">
       <SubType>Form</SubType>
     </Compile>

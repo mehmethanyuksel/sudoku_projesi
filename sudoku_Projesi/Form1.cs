@@ -12,7 +12,6 @@ namespace sudoku_Projesi
 {
     public partial class Form1 : Form
     {
-        
         //private Timer t = new Timer(); //Timer'ı hallet
         public static Form1 frm;
         kontrolEt kontroll;
@@ -27,9 +26,13 @@ namespace sudoku_Projesi
         Boolean kontroleKontrol = false;
         private void Form1_Load(object sender, EventArgs e)
         {
-           //AddBox addtxt = new AddBox();
            baslangicDegerleri baslangic = new baslangicDegerleri();
+           kullanici();
            
+        }
+        public void kullanici()
+        {
+            label2.Text = uye_girisi.k_adi;
         }
         private void matriseAl()
         {
