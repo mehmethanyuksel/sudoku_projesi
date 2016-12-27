@@ -14,8 +14,8 @@ namespace sudoku_Projesi
     public partial class uye_girisi : Form
     {
         private sqlBaglanti baglan;
-        private Form1 frm;
         public static string k_adi;
+        Form1 ff= new Form1();
         public uye_girisi()
         {
             InitializeComponent();
@@ -24,7 +24,7 @@ namespace sudoku_Projesi
             {
                 baglan.sc.Open();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("Bağlantı Hatası Oluştu");
             }
@@ -32,7 +32,7 @@ namespace sudoku_Projesi
 
         private void button2_Click(object sender, EventArgs e)
         {
-            baglan.komut.CommandText = "INSERT INTO uyeler(k_adi,sifre) VALUES ('"+textBox3.Text+"','"+textBox4.Text+"')";
+            baglan.komut.CommandText = "INSERT INTO uyeler(k_adi,sifre) VALUES ('" + textBox3.Text + "','" + textBox4.Text + "')";
             baglan.dr = baglan.komut.ExecuteReader();
             try
             {
@@ -44,27 +44,32 @@ namespace sudoku_Projesi
                 else
                     MessageBox.Show("Boş değer Girmeyin");
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("HATA OLUŞTU TEKRAR DENEYİNİZ");
             }
             baglan.dr.Close();
+            this.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+
             baglan.komut.CommandText = "SELECT * FROM uyeler where k_adi='" + textBox1.Text + "' AND sifre='" + textBox2.Text + "'";
             baglan.dr = baglan.komut.ExecuteReader();
             try
             {
-                if (textBox1.TextLength != 0 && textBox2.TextLength != 0&&baglan.dr.Read())
+                if (textBox1.TextLength != 0 && textBox2.TextLength != 0 )
                 {
-                    k_adi = textBox1.Text;
-                    MessageBox.Show("Başarıyla giriş yaptınız");
-                    k_adi = textBox1.Text;
-                    
-                    
+                    if ( baglan.dr.Read())
+                    {
+                        
+                        k_adi = textBox1.Text;
+                        MessageBox.Show("Başarıyla giriş yaptınız");
+                        
+                    }
+                    else
+                        MessageBox.Show("Yanlış Kullanıcı Adı-Şifre kombinasyonu");
                 }
                 else
                     MessageBox.Show("Boş değer Girmeyin");
@@ -74,6 +79,7 @@ namespace sudoku_Projesi
                 MessageBox.Show("HATA OLUŞTU TEKRAR DENEYİNİZ");
             }
             baglan.dr.Close();
+            this.Close();
         }
     }
 }

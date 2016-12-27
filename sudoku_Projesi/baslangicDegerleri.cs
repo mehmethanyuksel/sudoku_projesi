@@ -7,25 +7,31 @@ using System.Windows.Forms;
 
 namespace sudoku_Projesi
 {
-    class baslangicDegerleri:AddBox
+    class baslangicDegerleri : AddBox
     {
         private int j, k, boss = 10;
-        public int derece=20;
+        public int derece = 20;
         private Random uret = new Random();
         kontrolEt knt;
         private int[,] matris = new int[9, 9];
         public baslangicDegerleri()
         {
+            for (int i = 0; i < 9; i++)
+                for (int j = 0; j < 9; j++)
+                {
+                    Form1.frm.Controls["textbox" + (i + 1) + (j + 1)].Enabled = true;
+                }
+        
             yeniuretim();
             textboxaAta();
         }
         private void yeniuretim()
         {
-            
-            for (int i = 0; i < derece; i++)
+
+            for (int i = 0; i < 25; i++)
             {
-                j = uret.Next(1, 9);
-                k = uret.Next(1, 9);
+                j = uret.Next(0, 9);
+                k = uret.Next(0, 9);
                 matris[j, k] = uret.Next(1, 9);
                 for (int m = 0; m < 9; m++)
                     for (int l = 0; l < 9; l++)

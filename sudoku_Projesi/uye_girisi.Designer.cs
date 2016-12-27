@@ -51,9 +51,9 @@
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Location = new System.Drawing.Point(13, 10);
+            this.groupBox1.Location = new System.Drawing.Point(19, 10);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(276, 91);
+            this.groupBox1.Size = new System.Drawing.Size(308, 85);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Giriş yap";
@@ -61,11 +61,12 @@
             // 
             // button1
             // 
+            this.button1.BackgroundImage = global::sudoku_Projesi.Properties.Resources.giris;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.Location = new System.Drawing.Point(214, 13);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(56, 57);
+            this.button1.Size = new System.Drawing.Size(88, 57);
             this.button1.TabIndex = 7;
-            this.button1.Text = "Giriş Yap";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -110,9 +111,9 @@
             this.groupBox2.Controls.Add(this.textBox4);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Location = new System.Drawing.Point(12, 12);
+            this.groupBox2.Location = new System.Drawing.Point(14, 10);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(276, 91);
+            this.groupBox2.Size = new System.Drawing.Size(319, 91);
             this.groupBox2.TabIndex = 12;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Kaydol";
@@ -120,11 +121,12 @@
             // 
             // button2
             // 
+            this.button2.BackgroundImage = global::sudoku_Projesi.Properties.Resources.kaydol;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.Location = new System.Drawing.Point(214, 13);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(56, 57);
+            this.button2.Size = new System.Drawing.Size(99, 57);
             this.button2.TabIndex = 13;
-            this.button2.Text = "Kaydol";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -142,6 +144,7 @@
             this.textBox4.Location = new System.Drawing.Point(84, 50);
             this.textBox4.MaxLength = 30;
             this.textBox4.Name = "textBox4";
+            this.textBox4.PasswordChar = '*';
             this.textBox4.Size = new System.Drawing.Size(124, 20);
             this.textBox4.TabIndex = 2;
             // 
@@ -167,7 +170,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(301, 116);
+            this.ClientSize = new System.Drawing.Size(343, 115);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "uye_girisi";

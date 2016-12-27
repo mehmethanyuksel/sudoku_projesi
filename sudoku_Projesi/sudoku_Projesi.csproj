@@ -84,6 +84,21 @@
   <ItemGroup>
     <Compile Include="AddBox.cs" />
     <Compile Include="baslangicDegerleri.cs" />
+    <Compile Include="db_sudokuDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_sudokuDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_sudokuDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_sudokuDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_sudokuDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_sudokuDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +149,39 @@
     <EmbeddedResource Include="uye_girisi.resx">
       <DependentUpon>uye_girisi.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="db_sudokuDataSet.xsc">
+      <DependentUpon>db_sudokuDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="db_sudokuDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_sudokuDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_sudokuDataSet.xss">
+      <DependentUpon>db_sudokuDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="db_sudokuDataSet1.xsc">
+      <DependentUpon>db_sudokuDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="db_sudokuDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_sudokuDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_sudokuDataSet1.xss">
+      <DependentUpon>db_sudokuDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="db_sudokuDataSet2.xsc">
+      <DependentUpon>db_sudokuDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="db_sudokuDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_sudokuDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_sudokuDataSet2.xss">
+      <DependentUpon>db_sudokuDataSet2.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -166,6 +214,36 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SudoSu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oyna.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eniyiler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KontrolEt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KontrolEt1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cikis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cikis1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kaydol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giris.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\karistir.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

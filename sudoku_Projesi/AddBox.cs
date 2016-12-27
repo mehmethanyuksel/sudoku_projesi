@@ -38,6 +38,11 @@ namespace sudoku_Projesi
             textbox.MaxLength = 1;                              // max 1 karaktere ızın verır rakam ıcın yaptık yani
             textbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162))); // font ozeelıklerı
             Form1.frm.Controls.Add(textbox); // form 1 deki frm.this ile buraya oluşturdugumuz nesneyi 
+            textbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_KeyPress);
+        }
+        private void text_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
         }
     }
 }

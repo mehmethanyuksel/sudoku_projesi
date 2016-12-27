@@ -16,5 +16,13 @@ namespace sudoku_Projesi
         {
             InitializeComponent();
         }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'db_sudokuDataSet2.kistatistik' table. You can move, or remove it, as needed.
+            this.kistatistikTableAdapter.Fill(this.db_sudokuDataSet2.kistatistik);
+            
+
+        }
     }
 }

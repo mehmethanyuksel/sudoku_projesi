@@ -11,8 +11,8 @@ namespace sudoku_Projesi
     {
         public string text;
         public Boolean kontrol = false;
-        private int tuty = 0, tutd = 0, tut,ybitis=3,ybos=0,dbitis=3,dbos=0;
-        public int tutk,tuti;
+        private int tuty = 0, tutd = 0, tut, ybitis = 3, ybos = 0, dbitis = 3, dbos = 0;
+        public int tutk, tuti;
         private string strtut, strkont;
         private int[,] matrisim = new int[9, 9];
         public kontrolEt(int[,] matris)
@@ -42,6 +42,7 @@ namespace sudoku_Projesi
                                         text = (i + 1) + ". Satırda hata tespit edildi";
                                         tutk = k;
                                         tuti = i;
+                                        Form1.dogrumu = false;
                                         break;
                                     }
                             if (kontrol == false)
@@ -52,11 +53,12 @@ namespace sudoku_Projesi
                                         text = (i + 1) + ". Sütunda hata tespit edildi";
                                         tutk = k;
                                         tuti = i;
+                                        Form1.dogrumu = false;
                                         break;
                                     }
                         }
                 }
-               
+
             }
         }
 
@@ -84,6 +86,7 @@ namespace sudoku_Projesi
                                                         {
                                                             kontrol = true;
                                                             text = m + ". 9'lu içerisinde hata tespit edildi";
+                                                            Form1.dogrumu = false;
                                                             break;
                                                         }
                                                 }

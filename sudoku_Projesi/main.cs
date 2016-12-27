@@ -12,9 +12,11 @@ namespace sudoku_Projesi
 {
     public partial class main : Form
     {
+        public static main mai;
         public main()
         {
             InitializeComponent();
+            mai = this;
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -35,15 +37,17 @@ namespace sudoku_Projesi
         private void button2_Click(object sender, EventArgs e)
         {
             Form1 frm1 = new Form1();
-            main mainForm = new main();
             frm1.Show();
-            mainForm.Hide();
-            
         }
 
         private void main_Load(object sender, EventArgs e)
         {
-            radioButton2.Checked = true;
+      
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
