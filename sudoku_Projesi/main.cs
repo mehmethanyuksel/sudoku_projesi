@@ -19,33 +19,48 @@ namespace sudoku_Projesi
             mai = this;
         }
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+
+
+        private void main_Load(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void button3_Click(object sender, EventArgs e)
         {
             uye_girisi uye_ekrani = new uye_girisi();
             uye_ekrani.Show();
-            uye_ekrani.groupBox1.Visible = true;
+            uye_ekrani.groupBox1.BringToFront();
+            uye_ekrani.groupBox2.SendToBack();
         }
 
-        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            uye_girisi uye_ekrani = new uye_girisi();
-            uye_ekrani.Show();
-            uye_ekrani.groupBox1.Location = new Point(200, 200);
-            uye_ekrani.groupBox2.Visible = true;
-        }
-
-        private void button2_Click(object sender, EventArgs e)
+        private void pictureBox2_Click_1(object sender, EventArgs e)
         {
             Form1 frm1 = new Form1();
             frm1.Show();
         }
 
-        private void main_Load(object sender, EventArgs e)
+        private void button2_Click_2(object sender, EventArgs e)
         {
-      
+            uye_girisi uye_ekrani = new uye_girisi();
+            uye_ekrani.Show();
+            uye_ekrani.groupBox1.BringToFront();
+            uye_ekrani.groupBox2.SendToBack();
+            uye_ekrani.Text = "Giriş Yap";
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            
+            uye_girisi uye_ekrani = new uye_girisi();
+            uye_ekrani.Show();
+            uye_ekrani.groupBox2.BringToFront();
+            uye_ekrani.groupBox1.SendToBack();
+            uye_ekrani.Text = "Kayıt Ol";
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
         {
             this.Close();
         }

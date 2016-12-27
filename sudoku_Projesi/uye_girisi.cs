@@ -15,7 +15,7 @@ namespace sudoku_Projesi
     {
         private sqlBaglanti baglan;
         public static string k_adi;
-        Form1 ff= new Form1();
+        Form1 ff = new Form1();
         public uye_girisi()
         {
             InitializeComponent();
@@ -59,14 +59,14 @@ namespace sudoku_Projesi
             baglan.dr = baglan.komut.ExecuteReader();
             try
             {
-                if (textBox1.TextLength != 0 && textBox2.TextLength != 0 )
+                if (textBox1.TextLength != 0 && textBox2.TextLength != 0)
                 {
-                    if ( baglan.dr.Read())
+                    if (baglan.dr.Read())
                     {
-                        
+
                         k_adi = textBox1.Text;
                         MessageBox.Show("Başarıyla giriş yaptınız");
-                        
+
                     }
                     else
                         MessageBox.Show("Yanlış Kullanıcı Adı-Şifre kombinasyonu");

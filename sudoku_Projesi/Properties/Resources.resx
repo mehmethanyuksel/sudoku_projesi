@@ -118,37 +118,34 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="kaydol" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\kaydol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="play" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\play.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="KontrolEt" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\KontrolEt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cikis" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cikis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="main_kaydol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\main_kaydol.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sudokuv" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sudokuv.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="KontrolEt1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\KontrolEt1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="turn_off_on_power-512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\turn_off_on_power-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="giris" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\giris.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="main_giris" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\main_giris.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SudoSu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SudoSu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="eniyiler" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eniyiler.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="en_iyiler" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\en_iyiler.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cikis1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cikis1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="kontrolEttt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kontrolEttt.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="oyna" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\oyna.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="karistir_butonu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\karistir_butonu.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="karistir" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\karistir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="dark-blue-home-icon-500x500" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dark-blue-home-icon-500x500.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

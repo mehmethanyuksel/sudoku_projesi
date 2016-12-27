@@ -21,7 +21,6 @@ namespace sudoku_Projesi
                 {
                     Form1.frm.Controls["textbox" + (i + 1) + (j + 1)].Enabled = true;
                 }
-        
             yeniuretim();
             textboxaAta();
         }
@@ -48,7 +47,6 @@ namespace sudoku_Projesi
                 }
                 knt.kontrol = false;
             }
-
         }
         private void textboxaAta()
         {

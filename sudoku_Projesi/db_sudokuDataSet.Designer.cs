@@ -24,7 +24,7 @@ namespace sudoku_Projesi {
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
     public partial class db_sudokuDataSet : global::System.Data.DataSet {
         
-        private istatistiklerDataTable tableistatistikler;
+        private kistatistikDataTable tablekistatistik;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -54,8 +54,8 @@ namespace sudoku_Projesi {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["istatistikler"] != null)) {
-                    base.Tables.Add(new istatistiklerDataTable(ds.Tables["istatistikler"]));
+                if ((ds.Tables["kistatistik"] != null)) {
+                    base.Tables.Add(new kistatistikDataTable(ds.Tables["kistatistik"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace sudoku_Projesi {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public istatistiklerDataTable istatistikler {
+        public kistatistikDataTable kistatistik {
             get {
-                return this.tableistatistikler;
+                return this.tablekistatistik;
             }
         }
         
@@ -152,8 +152,8 @@ namespace sudoku_Projesi {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["istatistikler"] != null)) {
-                    base.Tables.Add(new istatistiklerDataTable(ds.Tables["istatistikler"]));
+                if ((ds.Tables["kistatistik"] != null)) {
+                    base.Tables.Add(new kistatistikDataTable(ds.Tables["kistatistik"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace sudoku_Projesi {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableistatistikler = ((istatistiklerDataTable)(base.Tables["istatistikler"]));
+            this.tablekistatistik = ((kistatistikDataTable)(base.Tables["kistatistik"]));
             if ((initTable == true)) {
-                if ((this.tableistatistikler != null)) {
-                    this.tableistatistikler.InitVars();
+                if ((this.tablekistatistik != null)) {
+                    this.tablekistatistik.InitVars();
                 }
             }
         }
@@ -204,13 +204,13 @@ namespace sudoku_Projesi {
             this.Namespace = "http://tempuri.org/db_sudokuDataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableistatistikler = new istatistiklerDataTable();
-            base.Tables.Add(this.tableistatistikler);
+            this.tablekistatistik = new kistatistikDataTable();
+            base.Tables.Add(this.tablekistatistik);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private bool ShouldSerializeistatistikler() {
+        private bool ShouldSerializekistatistik() {
             return false;
         }
         
@@ -270,16 +270,14 @@ namespace sudoku_Projesi {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public delegate void istatistiklerRowChangeEventHandler(object sender, istatistiklerRowChangeEvent e);
+        public delegate void kistatistikRowChangeEventHandler(object sender, kistatistikRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class istatistiklerDataTable : global::System.Data.TypedTableBase<istatistiklerRow> {
-            
-            private global::System.Data.DataColumn columnid;
+        public partial class kistatistikDataTable : global::System.Data.TypedTableBase<kistatistikRow> {
             
             private global::System.Data.DataColumn columnk_adi;
             
@@ -287,8 +285,8 @@ namespace sudoku_Projesi {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public istatistiklerDataTable() {
-                this.TableName = "istatistikler";
+            public kistatistikDataTable() {
+                this.TableName = "kistatistik";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -296,7 +294,7 @@ namespace sudoku_Projesi {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal istatistiklerDataTable(global::System.Data.DataTable table) {
+            internal kistatistikDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -313,17 +311,9 @@ namespace sudoku_Projesi {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected istatistiklerDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected kistatistikDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn idColumn {
-                get {
-                    return this.columnid;
-                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -353,54 +343,46 @@ namespace sudoku_Projesi {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public istatistiklerRow this[int index] {
+            public kistatistikRow this[int index] {
                 get {
-                    return ((istatistiklerRow)(this.Rows[index]));
+                    return ((kistatistikRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event istatistiklerRowChangeEventHandler istatistiklerRowChanging;
+            public event kistatistikRowChangeEventHandler kistatistikRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event istatistiklerRowChangeEventHandler istatistiklerRowChanged;
+            public event kistatistikRowChangeEventHandler kistatistikRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event istatistiklerRowChangeEventHandler istatistiklerRowDeleting;
+            public event kistatistikRowChangeEventHandler kistatistikRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event istatistiklerRowChangeEventHandler istatistiklerRowDeleted;
+            public event kistatistikRowChangeEventHandler kistatistikRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void AddistatistiklerRow(istatistiklerRow row) {
+            public void AddkistatistikRow(kistatistikRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public istatistiklerRow AddistatistiklerRow(int id, string k_adi, string skor) {
-                istatistiklerRow rowistatistiklerRow = ((istatistiklerRow)(this.NewRow()));
+            public kistatistikRow AddkistatistikRow(string k_adi, string skor) {
+                kistatistikRow rowkistatistikRow = ((kistatistikRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        id,
                         k_adi,
                         skor};
-                rowistatistiklerRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowistatistiklerRow);
-                return rowistatistiklerRow;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public istatistiklerRow FindByid(int id) {
-                return ((istatistiklerRow)(this.Rows.Find(new object[] {
-                            id})));
+                rowkistatistikRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowkistatistikRow);
+                return rowkistatistikRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                istatistiklerDataTable cln = ((istatistiklerDataTable)(base.Clone()));
+                kistatistikDataTable cln = ((kistatistikDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -408,13 +390,12 @@ namespace sudoku_Projesi {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new istatistiklerDataTable();
+                return new kistatistikDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
-                this.columnid = base.Columns["id"];
                 this.columnk_adi = base.Columns["k_adi"];
                 this.columnskor = base.Columns["skor"];
             }
@@ -422,46 +403,40 @@ namespace sudoku_Projesi {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             private void InitClass() {
-                this.columnid = new global::System.Data.DataColumn("id", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnid);
                 this.columnk_adi = new global::System.Data.DataColumn("k_adi", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnk_adi);
                 this.columnskor = new global::System.Data.DataColumn("skor", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnskor);
-                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnid}, true));
-                this.columnid.AllowDBNull = false;
-                this.columnid.Unique = true;
                 this.columnk_adi.AllowDBNull = false;
-                this.columnk_adi.MaxLength = 10;
+                this.columnk_adi.MaxLength = 20;
                 this.columnskor.AllowDBNull = false;
-                this.columnskor.MaxLength = 2147483647;
+                this.columnskor.MaxLength = 20;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public istatistiklerRow NewistatistiklerRow() {
-                return ((istatistiklerRow)(this.NewRow()));
+            public kistatistikRow NewkistatistikRow() {
+                return ((kistatistikRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new istatistiklerRow(builder);
+                return new kistatistikRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(istatistiklerRow);
+                return typeof(kistatistikRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.istatistiklerRowChanged != null)) {
-                    this.istatistiklerRowChanged(this, new istatistiklerRowChangeEvent(((istatistiklerRow)(e.Row)), e.Action));
+                if ((this.kistatistikRowChanged != null)) {
+                    this.kistatistikRowChanged(this, new kistatistikRowChangeEvent(((kistatistikRow)(e.Row)), e.Action));
                 }
             }
             
@@ -469,8 +444,8 @@ namespace sudoku_Projesi {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.istatistiklerRowChanging != null)) {
-                    this.istatistiklerRowChanging(this, new istatistiklerRowChangeEvent(((istatistiklerRow)(e.Row)), e.Action));
+                if ((this.kistatistikRowChanging != null)) {
+                    this.kistatistikRowChanging(this, new kistatistikRowChangeEvent(((kistatistikRow)(e.Row)), e.Action));
                 }
             }
             
@@ -478,8 +453,8 @@ namespace sudoku_Projesi {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.istatistiklerRowDeleted != null)) {
-                    this.istatistiklerRowDeleted(this, new istatistiklerRowChangeEvent(((istatistiklerRow)(e.Row)), e.Action));
+                if ((this.kistatistikRowDeleted != null)) {
+                    this.kistatistikRowDeleted(this, new kistatistikRowChangeEvent(((kistatistikRow)(e.Row)), e.Action));
                 }
             }
             
@@ -487,14 +462,14 @@ namespace sudoku_Projesi {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.istatistiklerRowDeleting != null)) {
-                    this.istatistiklerRowDeleting(this, new istatistiklerRowChangeEvent(((istatistiklerRow)(e.Row)), e.Action));
+                if ((this.kistatistikRowDeleting != null)) {
+                    this.kistatistikRowDeleting(this, new kistatistikRowChangeEvent(((kistatistikRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void RemoveistatistiklerRow(istatistiklerRow row) {
+            public void RemovekistatistikRow(kistatistikRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -521,7 +496,7 @@ namespace sudoku_Projesi {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "istatistiklerDataTable";
+                attribute2.FixedValue = "kistatistikDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -565,36 +540,25 @@ namespace sudoku_Projesi {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class istatistiklerRow : global::System.Data.DataRow {
+        public partial class kistatistikRow : global::System.Data.DataRow {
             
-            private istatistiklerDataTable tableistatistikler;
+            private kistatistikDataTable tablekistatistik;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal istatistiklerRow(global::System.Data.DataRowBuilder rb) : 
+            internal kistatistikRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableistatistikler = ((istatistiklerDataTable)(this.Table));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int id {
-                get {
-                    return ((int)(this[this.tableistatistikler.idColumn]));
-                }
-                set {
-                    this[this.tableistatistikler.idColumn] = value;
-                }
+                this.tablekistatistik = ((kistatistikDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string k_adi {
                 get {
-                    return ((string)(this[this.tableistatistikler.k_adiColumn]));
+                    return ((string)(this[this.tablekistatistik.k_adiColumn]));
                 }
                 set {
-                    this[this.tableistatistikler.k_adiColumn] = value;
+                    this[this.tablekistatistik.k_adiColumn] = value;
                 }
             }
             
@@ -602,10 +566,10 @@ namespace sudoku_Projesi {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string skor {
                 get {
-                    return ((string)(this[this.tableistatistikler.skorColumn]));
+                    return ((string)(this[this.tablekistatistik.skorColumn]));
                 }
                 set {
-                    this[this.tableistatistikler.skorColumn] = value;
+                    this[this.tablekistatistik.skorColumn] = value;
                 }
             }
         }
@@ -614,22 +578,22 @@ namespace sudoku_Projesi {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public class istatistiklerRowChangeEvent : global::System.EventArgs {
+        public class kistatistikRowChangeEvent : global::System.EventArgs {
             
-            private istatistiklerRow eventRow;
+            private kistatistikRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public istatistiklerRowChangeEvent(istatistiklerRow row, global::System.Data.DataRowAction action) {
+            public kistatistikRowChangeEvent(kistatistikRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public istatistiklerRow Row {
+            public kistatistikRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -657,7 +621,7 @@ namespace sudoku_Projesi.db_sudokuDataSetTableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class istatistiklerTableAdapter : global::System.ComponentModel.Component {
+    public partial class kistatistikTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -671,7 +635,7 @@ namespace sudoku_Projesi.db_sudokuDataSetTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public istatistiklerTableAdapter() {
+        public kistatistikTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -768,37 +732,16 @@ namespace sudoku_Projesi.db_sudokuDataSetTableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "istatistikler";
-            tableMapping.ColumnMappings.Add("id", "id");
+            tableMapping.DataSetTable = "kistatistik";
             tableMapping.ColumnMappings.Add("k_adi", "k_adi");
             tableMapping.ColumnMappings.Add("skor", "skor");
             this._adapter.TableMappings.Add(tableMapping);
-            this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[istatistikler] WHERE (([id] = @Original_id) AND ([k_adi] = @Or" +
-                "iginal_k_adi))";
-            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_k_adi", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "k_adi", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[istatistikler] ([id], [k_adi], [skor]) VALUES (@id, @k_adi, @s" +
-                "kor);\r\nSELECT id, k_adi, skor FROM istatistikler WHERE (id = @id)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[kistatistik] ([k_adi], [skor]) VALUES (@k_adi, @skor)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@k_adi", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "k_adi", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@skor", global::System.Data.SqlDbType.Text, 0, global::System.Data.ParameterDirection.Input, 0, 0, "skor", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[istatistikler] SET [id] = @id, [k_adi] = @k_adi, [skor] = @skor WHE" +
-                "RE (([id] = @Original_id) AND ([k_adi] = @Original_k_adi));\r\nSELECT id, k_adi, s" +
-                "kor FROM istatistikler WHERE (id = @id)";
-            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@k_adi", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "k_adi", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@skor", global::System.Data.SqlDbType.Text, 0, global::System.Data.ParameterDirection.Input, 0, 0, "skor", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_k_adi", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "k_adi", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@k_adi", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "k_adi", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@skor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "skor", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -814,7 +757,7 @@ namespace sudoku_Projesi.db_sudokuDataSetTableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT id, k_adi, skor FROM dbo.istatistikler";
+            this._commandCollection[0].CommandText = "SELECT k_adi, skor FROM dbo.kistatistik";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -822,7 +765,7 @@ namespace sudoku_Projesi.db_sudokuDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(db_sudokuDataSet.istatistiklerDataTable dataTable) {
+        public virtual int Fill(db_sudokuDataSet.kistatistikDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -835,9 +778,9 @@ namespace sudoku_Projesi.db_sudokuDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual db_sudokuDataSet.istatistiklerDataTable GetData() {
+        public virtual db_sudokuDataSet.kistatistikDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            db_sudokuDataSet.istatistiklerDataTable dataTable = new db_sudokuDataSet.istatistiklerDataTable();
+            db_sudokuDataSet.kistatistikDataTable dataTable = new db_sudokuDataSet.kistatistikDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -845,7 +788,7 @@ namespace sudoku_Projesi.db_sudokuDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(db_sudokuDataSet.istatistiklerDataTable dataTable) {
+        public virtual int Update(db_sudokuDataSet.kistatistikDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
@@ -853,7 +796,7 @@ namespace sudoku_Projesi.db_sudokuDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(db_sudokuDataSet dataSet) {
-            return this.Adapter.Update(dataSet, "istatistikler");
+            return this.Adapter.Update(dataSet, "kistatistik");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -874,48 +817,19 @@ namespace sudoku_Projesi.db_sudokuDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_id, string Original_k_adi) {
-            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_id));
-            if ((Original_k_adi == null)) {
-                throw new global::System.ArgumentNullException("Original_k_adi");
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[1].Value = ((string)(Original_k_adi));
-            }
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
-            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.DeleteCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.DeleteCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(int id, string k_adi, string skor) {
-            this.Adapter.InsertCommand.Parameters[0].Value = ((int)(id));
+        public virtual int Insert(string k_adi, string skor) {
             if ((k_adi == null)) {
                 throw new global::System.ArgumentNullException("k_adi");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(k_adi));
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(k_adi));
             }
             if ((skor == null)) {
                 throw new global::System.ArgumentNullException("skor");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(skor));
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(skor));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -932,55 +846,6 @@ namespace sudoku_Projesi.db_sudokuDataSetTableAdapters {
                 }
             }
         }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(int id, string k_adi, string skor, int Original_id, string Original_k_adi) {
-            this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(id));
-            if ((k_adi == null)) {
-                throw new global::System.ArgumentNullException("k_adi");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(k_adi));
-            }
-            if ((skor == null)) {
-                throw new global::System.ArgumentNullException("skor");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(skor));
-            }
-            this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(Original_id));
-            if ((Original_k_adi == null)) {
-                throw new global::System.ArgumentNullException("Original_k_adi");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(Original_k_adi));
-            }
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
-            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.UpdateCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.UpdateCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string k_adi, string skor, int Original_id, string Original_k_adi) {
-            return this.Update(Original_id, k_adi, skor, Original_id, Original_k_adi);
-        }
     }
     
     /// <summary>
@@ -995,7 +860,7 @@ namespace sudoku_Projesi.db_sudokuDataSetTableAdapters {
         
         private UpdateOrderOption _updateOrder;
         
-        private istatistiklerTableAdapter _istatistiklerTableAdapter;
+        private kistatistikTableAdapter _kistatistikTableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -1017,12 +882,12 @@ namespace sudoku_Projesi.db_sudokuDataSetTableAdapters {
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public istatistiklerTableAdapter istatistiklerTableAdapter {
+        public kistatistikTableAdapter kistatistikTableAdapter {
             get {
-                return this._istatistiklerTableAdapter;
+                return this._kistatistikTableAdapter;
             }
             set {
-                this._istatistiklerTableAdapter = value;
+                this._kistatistikTableAdapter = value;
             }
         }
         
@@ -1045,9 +910,9 @@ namespace sudoku_Projesi.db_sudokuDataSetTableAdapters {
                 if ((this._connection != null)) {
                     return this._connection;
                 }
-                if (((this._istatistiklerTableAdapter != null) 
-                            && (this._istatistiklerTableAdapter.Connection != null))) {
-                    return this._istatistiklerTableAdapter.Connection;
+                if (((this._kistatistikTableAdapter != null) 
+                            && (this._kistatistikTableAdapter.Connection != null))) {
+                    return this._kistatistikTableAdapter.Connection;
                 }
                 return null;
             }
@@ -1062,7 +927,7 @@ namespace sudoku_Projesi.db_sudokuDataSetTableAdapters {
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
-                if ((this._istatistiklerTableAdapter != null)) {
+                if ((this._kistatistikTableAdapter != null)) {
                     count = (count + 1);
                 }
                 return count;
@@ -1076,12 +941,12 @@ namespace sudoku_Projesi.db_sudokuDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private int UpdateUpdatedRows(db_sudokuDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._istatistiklerTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.istatistikler.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._kistatistikTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.kistatistik.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._istatistiklerTableAdapter.Update(updatedRows));
+                    result = (result + this._kistatistikTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -1095,11 +960,11 @@ namespace sudoku_Projesi.db_sudokuDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private int UpdateInsertedRows(db_sudokuDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._istatistiklerTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.istatistikler.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._kistatistikTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.kistatistik.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._istatistiklerTableAdapter.Update(addedRows));
+                    result = (result + this._kistatistikTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -1113,11 +978,11 @@ namespace sudoku_Projesi.db_sudokuDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private int UpdateDeletedRows(db_sudokuDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._istatistiklerTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.istatistikler.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._kistatistikTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.kistatistik.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._istatistiklerTableAdapter.Update(deletedRows));
+                    result = (result + this._kistatistikTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -1160,8 +1025,8 @@ namespace sudoku_Projesi.db_sudokuDataSetTableAdapters {
             if ((dataSet.HasChanges() == false)) {
                 return 0;
             }
-            if (((this._istatistiklerTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._istatistiklerTableAdapter.Connection) == false))) {
+            if (((this._kistatistikTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._kistatistikTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
@@ -1197,13 +1062,13 @@ namespace sudoku_Projesi.db_sudokuDataSetTableAdapters {
             try {
                 // ---- Prepare for update -----------
                 //
-                if ((this._istatistiklerTableAdapter != null)) {
-                    revertConnections.Add(this._istatistiklerTableAdapter, this._istatistiklerTableAdapter.Connection);
-                    this._istatistiklerTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._istatistiklerTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._istatistiklerTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._istatistiklerTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._istatistiklerTableAdapter.Adapter);
+                if ((this._kistatistikTableAdapter != null)) {
+                    revertConnections.Add(this._kistatistikTableAdapter, this._kistatistikTableAdapter.Connection);
+                    this._kistatistikTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._kistatistikTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._kistatistikTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._kistatistikTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._kistatistikTableAdapter.Adapter);
                     }
                 }
                 // 
@@ -1264,9 +1129,9 @@ namespace sudoku_Projesi.db_sudokuDataSetTableAdapters {
                 if (workConnOpened) {
                     workConnection.Close();
                 }
-                if ((this._istatistiklerTableAdapter != null)) {
-                    this._istatistiklerTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._istatistiklerTableAdapter]));
-                    this._istatistiklerTableAdapter.Transaction = null;
+                if ((this._kistatistikTableAdapter != null)) {
+                    this._kistatistikTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._kistatistikTableAdapter]));
+                    this._kistatistikTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];
