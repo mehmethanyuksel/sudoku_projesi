@@ -1,0 +1,12 @@
+c:\users\mehmethan\documents\visual studio 2012\Projects\sudoku_Projesi\sudoku_Projesi\bin\Debug\sudoku_Projesi.exe.config
+c:\users\mehmethan\documents\visual studio 2012\Projects\sudoku_Projesi\sudoku_Projesi\bin\Debug\sudoku_Projesi.exe
+c:\users\mehmethan\documents\visual studio 2012\Projects\sudoku_Projesi\sudoku_Projesi\bin\Debug\sudoku_Projesi.pdb
+c:\users\mehmethan\documents\visual studio 2012\Projects\sudoku_Projesi\sudoku_Projesi\obj\Debug\sudoku_Projesi.csprojResolveAssemblyReference.cache
+c:\users\mehmethan\documents\visual studio 2012\Projects\sudoku_Projesi\sudoku_Projesi\obj\Debug\sudoku_Projesi.Form1.resources
+c:\users\mehmethan\documents\visual studio 2012\Projects\sudoku_Projesi\sudoku_Projesi\obj\Debug\sudoku_Projesi.Properties.Resources.resources
+c:\users\mehmethan\documents\visual studio 2012\Projects\sudoku_Projesi\sudoku_Projesi\obj\Debug\sudoku_Projesi.csproj.GenerateResource.Cache
+c:\users\mehmethan\documents\visual studio 2012\Projects\sudoku_Projesi\sudoku_Projesi\obj\Debug\sudoku_Projesi.exe
+c:\users\mehmethan\documents\visual studio 2012\Projects\sudoku_Projesi\sudoku_Projesi\obj\Debug\sudoku_Projesi.pdb
+C:\Users\Mehmethan\documents\visual studio 2012\Projects\sudoku_Projesi\sudoku_Projesi\obj\Debug\sudoku_Projesi.main.resources
+C:\Users\Mehmethan\documents\visual studio 2012\Projects\sudoku_Projesi\sudoku_Projesi\obj\Debug\sudoku_Projesi.uye_girisi.resources
+C:\Users\Mehmethan\documents\visual studio 2012\Projects\sudoku_Projesi\sudoku_Projesi\obj\Debug\sudoku_Projesi.Form2.resources
